@@ -12,10 +12,10 @@ const MessageContainer = styled.div`
 
 const Home: NextPage = () => {
   return (
-    <Layout title="carlo_pascual">
+    <Layout title="github">
       <MessageContainer>
         <BotMessage sender={"darrenveezy"} barColor={"green"}>
-          <p>HelloW AND WELCOME!!!</p>
+          <p>This is the github page.</p>
         </BotMessage>
       </MessageContainer>
     </Layout>

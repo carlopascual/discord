@@ -10,12 +10,17 @@ const MessageContainer = styled.div`
   grid-gap: 1.5rem;
 `;
 
+const botname = "Carlo Bot 🤖";
 const Home: NextPage = () => {
   return (
-    <Layout title="carlo_pascual">
+    <Layout title="test">
       <MessageContainer>
-        <BotMessage sender={"darrenveezy"} barColor={"green"}>
-          <p>HelloW AND WELCOME!!!</p>
+        <BotMessage sender={botname} barColor={"purple"}>
+          <h1>Strapi.io</h1>
+          <p>This is the test page.</p>
+        </BotMessage>
+        <BotMessage sender={botname} barColor={"red"}>
+          <p>This is the test page #2</p>
         </BotMessage>
       </MessageContainer>
     </Layout>

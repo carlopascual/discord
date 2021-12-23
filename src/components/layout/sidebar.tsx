@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 import { BG_DARKER_COLOR, CONTENT_COLOR, BG_COLOR } from "constants/colors";
 
 type Entry = {
   children: React.ReactNode;
+  href: string;
 };
 
 const EntryOutline = styled.div`
@@ -16,6 +18,7 @@ const EntryOutline = styled.div`
   font-weight: 500;
   border-radius: 3px;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background: ${BG_COLOR};
@@ -28,11 +31,15 @@ const Hash = styled.span`
   font-weight: 400;
 `;
 
-const Entry = ({ children }: Entry) => {
+const Entry = ({ children, href }: Entry) => {
   return (
-    <EntryOutline>
-      <Hash>#</Hash> {children}
-    </EntryOutline>
+    <Link href={href}>
+      <a style={{ textDecoration: "none" }}>
+        <EntryOutline>
+          <Hash>#</Hash> {children}
+        </EntryOutline>
+      </a>
+    </Link>
   );
 };
 
@@ -50,10 +57,10 @@ const Sidebar = () => {
   return (
     <SidebarOutline>
       <SidebarGrid>
-        <Entry>About</Entry>
-        <Entry>Github</Entry>
-        <Entry>Projects</Entry>
-        <Entry>Test</Entry>
+        <Entry href="/about">About</Entry>
+        <Entry href="/github">Github</Entry>
+        <Entry href="/projects">Projects</Entry>
+        <Entry href="/test">Test</Entry>
       </SidebarGrid>
     </SidebarOutline>
   );

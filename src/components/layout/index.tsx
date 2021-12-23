@@ -4,10 +4,11 @@ import Sidebar from "./sidebar";
 
 type Layout = {
   children: React.ReactNode;
+  title: string;
 };
 
 type Header = {
-  channel: string;
+  title: string;
 };
 
 const Outline = styled.div`
@@ -31,9 +32,9 @@ const Hash = styled.span`
   font-weight: 400;
 `;
 
-const Header = ({ channel }: Header) => (
+const Header = ({ title }: Header) => (
   <HeaderOutline>
-    <Hash>#</Hash> {channel}
+    <Hash>#</Hash> {title}
   </HeaderOutline>
 );
 
@@ -43,11 +44,11 @@ const Layoutoutline = styled.div`
   height: 100vh;
 `;
 
-const Layout = ({ children }: Layout) => (
+const Layout = ({ children, title }: Layout) => (
   <Layoutoutline>
     <Sidebar />
     <div>
-      <Header channel={"carlo_pascual"} />
+      <Header title={title} />
       <Outline>{children}</Outline>
     </div>
   </Layoutoutline>

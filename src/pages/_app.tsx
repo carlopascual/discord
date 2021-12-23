@@ -11,9 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css"
       />
       <GlobalStyle />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </>
   );
 }
