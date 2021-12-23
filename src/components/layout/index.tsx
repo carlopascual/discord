@@ -1,5 +1,6 @@
 import { CONTENT_COLOR } from "constants/colors";
 import styled from "styled-components";
+import Sidebar from "./sidebar";
 
 type Layout = {
   children: React.ReactNode;
@@ -35,12 +36,21 @@ const Header = ({ channel }: Header) => (
     <Hash>#</Hash> {channel}
   </HeaderOutline>
 );
-const Layout = ({ children }: Layout) => (
-  <>
-    <Header channel={"carlo_pascual"} />
 
-    <Outline>{children}</Outline>
-  </>
+const Layoutoutline = styled.div`
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+`;
+
+const Layout = ({ children }: Layout) => (
+  <Layoutoutline>
+    <Sidebar />
+    <div>
+      <Header channel={"carlo_pascual"} />
+      <Outline>{children}</Outline>
+    </div>
+  </Layoutoutline>
 );
 
 export default Layout;
