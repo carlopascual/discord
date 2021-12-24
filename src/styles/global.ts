@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Whitney';
+    font-family: 'Whitney' sans-serif;
     background: ${BG_COLOR};
   }
 `;
