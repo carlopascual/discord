@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <Layout title="projects">
       <MessageContainer>
-        <BotMessage sender={"darrenveezy"} barColor={"green"}>
+        <BotMessage sender={"Siri Bot 🤖"} barColor={"green"}>
           <p>This is the projects page.</p>
         </BotMessage>
       </MessageContainer>

@@ -14,7 +14,13 @@ const Home: NextPage = () => {
   return (
     <Layout title="carlo_pascual">
       <MessageContainer>
-        <BotMessage sender={"darrenveezy"} barColor={"green"}>
+        <BotMessage sender={"Siri Bot 🤖"} barColor={"green"}>
+          <p>HelloW AND WELCOME!!!</p>
+          <p>HelloW AND WELCOME!!!</p>
+          <p>HelloW AND WELCOME!!!</p>
+          <p>HelloW AND WELCOME!!!</p>
+          <p>HelloW AND WELCOME!!!</p>
+          <p>HelloW AND WELCOME!!!</p>
           <p>HelloW AND WELCOME!!!</p>
         </BotMessage>
       </MessageContainer>

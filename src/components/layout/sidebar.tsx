@@ -58,6 +58,7 @@ const Sidebar = ({ className }: { className: string }) => {
   return (
     <SidebarOutline className={className}>
       <SidebarGrid>
+        <Entry href="/">Home</Entry>
         <Entry href="/about">About</Entry>
         <Entry href="/github">Github</Entry>
         <Entry href="/experience">Experience</Entry>

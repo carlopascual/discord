@@ -29,6 +29,9 @@ const Home: NextPage = () => {
         <BotMessage sender={botname} barColor={"black"}>
           <p>Github</p>
         </BotMessage>
+        <BotMessage sender={botname} barColor={"#1b2838"}>
+          <p>Steam</p>
+        </BotMessage>
       </MessageContainer>
     </Layout>
   );

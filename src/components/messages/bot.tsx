@@ -22,7 +22,7 @@ const ChildrenContainer = styled.div<ChidlrenContainer>`
   color: ${CONTENT_COLOR};
   background: ${BG_DARKER_COLOR};
   border-radius: 0 3px 3px 0;
-  padding: 10px 10px;
+  padding: 20px 10px;
   margin-left: 20px;
   position: relative;
 
@@ -30,6 +30,10 @@ const ChildrenContainer = styled.div<ChidlrenContainer>`
     margin: 0;
     font-size: 0.85rem;
     line-height: 1.1rem;
+  }
+
+  h2 {
+    margin: 1rem 0;
   }
 
   &:before {
@@ -41,6 +45,14 @@ const ChildrenContainer = styled.div<ChidlrenContainer>`
     background: ${({ barColor }) => barColor};
     position: absolute;
     border-radius: 3px 0 0 3px;
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
   }
 `;
 
