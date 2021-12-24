@@ -7,12 +7,12 @@ import Layout from "components/layout";
 
 const MessageContainer = styled.div`
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 16px;
 `;
 
 const Home: NextPage = () => {
   return (
-    <Layout title="carlo_pascual">
+    <Layout title='carlo_pascual'>
       <MessageContainer>
         <BotMessage sender={"Siri Bot 🤖"} barColor={"green"}>
           <p>HelloW AND WELCOME!!!</p>

@@ -43,35 +43,42 @@ export default class MyDocument extends Document {
 
   render(): ReactElement {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
           <link
-            rel="preload"
-            href="/fonts/whitneybook.otf"
-            as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            rel='preload'
+            href='/fonts/whitney/whitneybook.otf'
+            as='font'
+            type='font/otf'
+            crossOrigin='anonymous'
           />
           <link
-            rel="preload"
-            href="/fonts/whitneymedium.otf"
-            as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            rel='preload'
+            href='/fonts/whitney/whitneymedium.otf'
+            as='font'
+            type='font/otf'
+            crossOrigin='anonymous'
           />
           <link
-            rel="preload"
-            href="/fonts/whitneysemibold.otf"
-            as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            rel='preload'
+            href='/fonts/whitney/whitneysemibold.otf'
+            as='font'
+            type='font/otf'
+            crossOrigin='anonymous'
           />
           <link
-            rel="preload"
-            href="/fonts/whitneybold.otf"
-            as="font"
-            type="font/otf"
-            crossOrigin="anonymous"
+            rel='preload'
+            href='/fonts/whitney/whitneybold.otf'
+            as='font'
+            type='font/otf'
+            crossOrigin='anonymous'
+          />
+          <link
+            rel='preload'
+            href='/fonts/gerbera/gerberamedium.otf'
+            as='font'
+            type='font/ttf'
+            crossOrigin='anonymous'
           />
         </Head>
         <body>

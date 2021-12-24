@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import { BG_COLOR } from "constants/colors";
-// import "../../public/normalize.css";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -30,6 +29,11 @@ const GlobalStyle = createGlobalStyle`
     font-display: block;
   }
 
+  @font-face {
+    font-family: 'Gerbera';
+    src: url(fonts/gerbera/gerberamedium.ttf) format("truetype");
+    font-display: block;
+  }
 
   * {
     box-sizing: border-box;

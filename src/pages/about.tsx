@@ -8,7 +8,7 @@ import Layout from "components/layout";
 
 const MessageContainer = styled.div`
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 16px;
 `;
 
 const sender = "carlopascual";
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   );
 
   return (
-    <Layout title="about">
+    <Layout title='about'>
       <MessageContainer>
         {count >= 1 && (
           <RegularMessage sender={sender} message={"HELLO! And welcome!! 👋"} />
