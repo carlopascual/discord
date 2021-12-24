@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import styled from "styled-components";
 
-import RegularMessage from "components/messages/regular";
 import BotMessage from "components/messages/bot";
 import Layout from "components/layout";
 

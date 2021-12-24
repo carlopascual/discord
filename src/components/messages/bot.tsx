@@ -15,19 +15,32 @@ interface ChidlrenContainer {
   barColor: string;
 }
 
+const BORDER_WIDTH = 5;
+
 const ChildrenContainer = styled.div<ChidlrenContainer>`
   font-size: 1rem;
   color: ${CONTENT_COLOR};
   background: ${BG_DARKER_COLOR};
-  border-radius: 3px;
+  border-radius: 0 3px 3px 0;
   padding: 10px 10px;
   margin-left: 20px;
-  border-left: 5px solid ${({ barColor }) => barColor};
+  position: relative;
 
   p {
     margin: 0;
     font-size: 0.85rem;
     line-height: 1.1rem;
+  }
+
+  &:before {
+    content: "";
+    top: 0;
+    height: 100%;
+    left: ${0 - BORDER_WIDTH}px;
+    width: ${BORDER_WIDTH}px;
+    background: ${({ barColor }) => barColor};
+    position: absolute;
+    border-radius: 3px 0 0 3px;
   }
 `;
 

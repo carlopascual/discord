@@ -45,6 +45,7 @@ const Entry = ({ children, href }: Entry) => {
 
 const SidebarOutline = styled.div`
   background: ${BG_DARKER_COLOR};
+  height: 100%;
 `;
 
 const SidebarGrid = styled.div`
@@ -53,14 +54,15 @@ const SidebarGrid = styled.div`
   padding: 10px;
 `;
 
-const Sidebar = () => {
+const Sidebar = ({ className }: { className: string }) => {
   return (
-    <SidebarOutline>
+    <SidebarOutline className={className}>
       <SidebarGrid>
         <Entry href="/about">About</Entry>
         <Entry href="/github">Github</Entry>
+        <Entry href="/experience">Experience</Entry>
         <Entry href="/projects">Projects</Entry>
-        <Entry href="/test">Test</Entry>
+        <Entry href="/social">Social</Entry>
       </SidebarGrid>
     </SidebarOutline>
   );
