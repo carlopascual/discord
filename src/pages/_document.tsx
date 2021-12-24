@@ -44,7 +44,36 @@ export default class MyDocument extends Document {
   render(): ReactElement {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/whitneybook.otf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/whitneymedium.otf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/whitneysemibold.otf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/whitneybold.otf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

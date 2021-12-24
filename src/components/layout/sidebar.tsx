@@ -12,22 +12,23 @@ const EntryOutline = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  color: ${CONTENT_COLOR};
-  padding: 5px 9px;
-  font-size: 0.8rem;
+  color: rgb(142, 146, 151);
+  padding: 6px 8px;
+  font-size: 16px;
   font-weight: 500;
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    background: ${BG_COLOR};
+    background: rgba(79, 84, 92, 0.16);
+    color: #d6d7d8;
   }
 `;
 
 const Hash = styled.span`
-  color: ${CONTENT_COLOR};
-  font-size: 1.1rem;
+  color: #72767d;
+  font-size: 18px;
   font-weight: 400;
 `;
 
@@ -50,20 +51,20 @@ const SidebarOutline = styled.div`
 
 const SidebarGrid = styled.div`
   display: grid;
-  grid-gap: 5px;
-  padding: 10px;
+  grid-gap: 1px;
+  padding: 8px;
 `;
 
 const Sidebar = ({ className }: { className: string }) => {
   return (
     <SidebarOutline className={className}>
       <SidebarGrid>
-        <Entry href="/">Home</Entry>
-        <Entry href="/about">About</Entry>
-        <Entry href="/github">Github</Entry>
-        <Entry href="/experience">Experience</Entry>
-        <Entry href="/projects">Projects</Entry>
-        <Entry href="/social">Social</Entry>
+        <Entry href="/">welcome</Entry>
+        <Entry href="/about">about</Entry>
+        <Entry href="/github">github</Entry>
+        <Entry href="/experience">experience</Entry>
+        <Entry href="/projects">projects</Entry>
+        <Entry href="/social">social</Entry>
       </SidebarGrid>
     </SidebarOutline>
   );
