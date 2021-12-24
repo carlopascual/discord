@@ -16,7 +16,7 @@ const Outline = styled.div`
   padding: 50px;
 `;
 
-const HEADER_HEIGHT = 75;
+const HEADER_HEIGHT = 50;
 
 const HeaderOutline = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ const HeaderOutline = styled.div`
   gap: 1rem;
   padding: 20px;
   border-bottom: 2px solid rgb(0, 0, 0, 0.7);
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
   background: ${BG_COLOR};
