@@ -126,7 +126,7 @@ const Sidebar = ({ className }: { className: string }) => {
       <Title style={{ margin: "18px 0 0 18px" }}>Text Channels</Title>
       <SidebarGrid>
         {routes.map(({ href, title }) => (
-          <Entry selected={href === router.asPath} href={href}>
+          <Entry key={href} selected={href === router.asPath} href={href}>
             {title}
           </Entry>
         ))}
