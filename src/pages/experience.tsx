@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <MessageContainer>
         <RegularMessage
           sender="carlopascual"
-          message="Hey Siri, get job experience."
+          message="Hey Siri, show me what I've done."
         />
         <BotMessage sender={botname} barColor={"#00b67A"}>
           <h2>Software Engineer</h2>

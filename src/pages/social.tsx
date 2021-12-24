@@ -21,13 +21,13 @@ const Home: NextPage = () => {
             "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)"
           }
         >
-          <p>This is the test page.</p>
+          <p>Instagram</p>
         </BotMessage>
         <BotMessage sender={botname} barColor={"rgb(14, 118, 168)"}>
-          <p>This is the test page #2</p>
+          <p>LinkedIn</p>
         </BotMessage>
         <BotMessage sender={botname} barColor={"black"}>
-          <p>This is the test page #2</p>
+          <p>Github</p>
         </BotMessage>
       </MessageContainer>
     </Layout>

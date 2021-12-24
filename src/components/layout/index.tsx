@@ -83,7 +83,7 @@ const ContentWrapper = styled.div`
 const Layout = ({ children, title }: Layout) => (
   <LayoutOutline>
     <Sidebar className="sidebar" />
-    <Header className="header" title={"asdf"} />
+    <Header className="header" title={title} />
     <ContentWrapper>{children}</ContentWrapper>
   </LayoutOutline>
 );
