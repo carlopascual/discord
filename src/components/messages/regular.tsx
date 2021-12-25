@@ -7,7 +7,7 @@ import React from "react";
 type Message = {
   message: React.ReactNode;
   sender: string;
-  timestamp: Date;
+  timestamp: Date | undefined;
 };
 
 const Content = styled.div`
@@ -43,11 +43,13 @@ const MessageOutline = styled.div`
 const MyMessage = ({ sender, message, timestamp }: Message) => (
   <MessageOutline>
     <div style={{ whiteSpace: "nowrap" }}>
-      <Timestamp>
-        {`${makeTwoDigits(timestamp.getHours())}:${makeTwoDigits(
-          timestamp.getMinutes()
-        )}`}{" "}
-      </Timestamp>
+      {timestamp && (
+        <Timestamp>
+          {`${makeTwoDigits(timestamp.getHours())}:${makeTwoDigits(
+            timestamp.getMinutes()
+          )}`}{" "}
+        </Timestamp>
+      )}
       <Sender style={{ marginLeft: "8px" }}>{sender}</Sender>
     </div>
 
