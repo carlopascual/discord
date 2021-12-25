@@ -25,11 +25,11 @@ const Home: NextPage = () => {
   );
 
   return (
-    <Layout title="experience">
+    <Layout title='experience'>
       <MessageContainer>
         {count >= 1 && (
           <RegularMessage
-            sender="carlopascual"
+            sender='carlopascual'
             message="Hey Siri, show me what I've done."
           />
         )}

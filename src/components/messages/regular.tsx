@@ -7,7 +7,7 @@ import React from "react";
 type Message = {
   message: React.ReactNode;
   sender: string;
-  timestamp: Date | undefined;
+  timestamp?: Date;
 };
 
 const Content = styled.div`
