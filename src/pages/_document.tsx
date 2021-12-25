@@ -46,39 +46,8 @@ export default class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <link
-            rel='preload'
-            href='/fonts/whitney/whitneybook.otf'
-            as='font'
-            type='font/otf'
-            crossOrigin='anonymous'
-          />
-          <link
-            rel='preload'
-            href='/fonts/whitney/whitneymedium.otf'
-            as='font'
-            type='font/otf'
-            crossOrigin='anonymous'
-          />
-          <link
-            rel='preload'
-            href='/fonts/whitney/whitneysemibold.otf'
-            as='font'
-            type='font/otf'
-            crossOrigin='anonymous'
-          />
-          <link
-            rel='preload'
-            href='/fonts/whitney/whitneybold.otf'
-            as='font'
-            type='font/otf'
-            crossOrigin='anonymous'
-          />
-          <link
-            rel='preload'
-            href='/fonts/gerbera/gerberamedium.otf'
-            as='font'
-            type='font/ttf'
-            crossOrigin='anonymous'
+            href='https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900'
+            rel='stylesheet'
           />
         </Head>
         <body>

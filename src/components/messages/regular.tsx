@@ -12,7 +12,6 @@ type Message = {
 
 const Content = styled.div`
   font-size: 16px;
-  line-height: 21px;
   color: ${CONTENT_COLOR};
 
   & > :first-child {
@@ -28,7 +27,6 @@ const Timestamp = styled.span`
   display: inline;
   font-size: 11px;
   font-weight: 500;
-  line-height: 21px;
   color: rgb(114, 118, 125);
 `;
 
