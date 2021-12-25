@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           <RegularMessage
             timestamp={timestamps[0]}
             sender={sender}
-            message={"HELLO! And welcome!! 👋"}
+            message='HELLO! And welcome!! 👋'
           />
         )}
         {count >= 3 && (
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             sender={sender}
             message={
               <p>
-                "I'm Carlo Pascual, a software engineer and a web developer."
+                {`I'm Carlo Pascual, a software engineer and a web developer.`}
               </p>
             }
           />
@@ -40,14 +40,14 @@ const Home: NextPage = () => {
           <RegularMessage
             timestamp={timestamps[4]}
             sender={sender}
-            message={"Currently based in Copenhagen, Denmark."}
+            message='Currently based in Copenhagen, Denmark.'
           />
         )}
         {count >= 5 && (
           <RegularMessage
             timestamp={timestamps[5]}
             sender={sender}
-            message={"I like games and code."}
+            message='I like games and code.'
           />
         )}
       </MessageContainer>
