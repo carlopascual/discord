@@ -97,7 +97,6 @@ const routes = [
 ];
 
 const Title = styled.h4`
-  font-family: "Gerbera", sans-serif;
   color: rgb(142, 146, 151);
   font-size: 12px;
   text-transform: uppercase;

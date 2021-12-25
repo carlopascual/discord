@@ -4,8 +4,9 @@ import { SENDER_COLOR } from "constants/colors";
 
 export const Sender = styled.h5`
   display: inline;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
-  color: ${SENDER_COLOR};
+  line-height: 21px;
+  color: cornflowerblue;
 `;

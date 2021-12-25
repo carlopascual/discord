@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import styled from "styled-components";
-import useInterval from "use-interval";
-import { useState } from "react";
 
 import RegularMessage from "components/messages/regular";
 import Layout from "components/layout";
+import useTimestamps from "hooks/useTimestamps";
 
 const MessageContainer = styled.div`
   display: grid;
@@ -14,37 +13,42 @@ const MessageContainer = styled.div`
 const sender = "carlopascual";
 
 const Home: NextPage = () => {
-  const [count, setCount] = useState(0);
-
-  useInterval(
-    () => {
-      setCount(count + 1);
-    },
-    count <= 7 ? 1000 : null
-  );
+  const { count, timestamps } = useTimestamps({ lastCount: 7 });
 
   return (
     <Layout title='about'>
       <MessageContainer>
         {count >= 1 && (
-          <RegularMessage sender={sender} message={"HELLO! And welcome!! 👋"} />
+          <RegularMessage
+            timestamp={timestamps[0]}
+            sender={sender}
+            message={"HELLO! And welcome!! 👋"}
+          />
         )}
         {count >= 3 && (
           <RegularMessage
+            timestamp={timestamps[3]}
             sender={sender}
             message={
-              "I'm Carlo Pascual, a software engineer and a web developer."
+              <p>
+                "I'm Carlo Pascual, a software engineer and a web developer."
+              </p>
             }
           />
         )}
         {count >= 4 && (
           <RegularMessage
+            timestamp={timestamps[4]}
             sender={sender}
             message={"Currently based in Copenhagen, Denmark."}
           />
         )}
         {count >= 5 && (
-          <RegularMessage sender={sender} message={"I like games and code."} />
+          <RegularMessage
+            timestamp={timestamps[5]}
+            sender={sender}
+            message={"I like games and code."}
+          />
         )}
       </MessageContainer>
     </Layout>
